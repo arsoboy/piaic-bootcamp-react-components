@@ -35,7 +35,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={{textAlign:"center",textDecoration:"underline"}}>COMPONENTS AND PROPS</h1>
+      <h1 style={{textAlign:"center",textDecoration:"underline"}}>
+        REACT 
+        <br /><em style={{fontSize:"70%"}}>COMPONENTS AND PROPS</em>
+      </h1>
       <World data_world={world} />
     </div>
   );
