@@ -1,0 +1,93 @@
+body {
+	background-color: #111;
+	color: #fff;
+}
+
+.App {
+  text-align: left;
+  max-width: 480px;
+  margin: 50px auto 0;
+  text-transform: uppercase;
+}
+
+.component {
+	padding: 30px;
+	border: 1px solid;
+	position: relative;
+	margin-top: 20px;
+}
+
+.component::after {
+	content: "<React Component />";
+	font-size: 80%;
+	font-weight: normal;
+	position: absolute;
+	left: -70px;
+	background: #04AA6D;
+	padding: 5px 10px;
+	color: #000;
+	transform: rotate(270deg);
+	bottom: 40%;
+	font-style: italic;
+  text-transform: none;
+}
+
+.component > h3 {
+	position: absolute;
+	margin: 0;
+	padding: 5px 10px;
+	background: #eee;
+	color: #000;
+	left: -1px;
+	top: 0px;
+}
+
+.component ul {
+	margin: 20px 0 0;
+	padding-left: 15px;
+}
+
+.sub-component ul {
+	margin: 10px 0;
+	border: 1px dashed;
+	padding: 10px 10px 10px 24px;
+	font-size: 90%;
+	font-style: italic;
+  text-transform: none;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
