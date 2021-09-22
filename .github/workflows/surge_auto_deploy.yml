@@ -40,4 +40,4 @@ jobs:
 
       # Runs a single command, Deploying build on surge
       - name: Deploying using surge
-        #run: surge ./build cnc25880-react-components-props-bootcamp-2020.surge.sh --token ${{ secrets.MY_SURGE_TOKEN }}
+        run: surge ./build cnc25880-react-components-props-bootcamp-2020.surge.sh --token ${{ secrets.MY_SURGE_TOKEN }}
